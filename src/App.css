@@ -1,0 +1,231 @@
+/* Clean, Modern Music Store Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  color: #222;
+  background: linear-gradient(120deg, #f6f7fb 0%, #e9eaf3 100%);
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 0 1.5rem 0;
+  background: none;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #5a67d8;
+  filter: drop-shadow(0 2px 8px #e9eaf3);
+}
+
+.brand-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #222;
+}
+
+.page-title {
+  display: none;
+}
+
+.container {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 8px 32px 0 rgba(90, 103, 216, 0.08), 0 2px 8px 0 rgba(90, 103, 216, 0.04);
+  margin: 2.5rem auto 2rem auto;
+  max-width: 700px;
+  border: 1.5px solid #e9eaf3;
+}
+
+.search-container {
+  background: #f6f7fb;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(90, 103, 216, 0.06);
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e9eaf3;
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-label {
+  font-weight: 600;
+  color: #5a67d8;
+  font-size: 1.1rem;
+  min-width: 120px;
+  letter-spacing: 1px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 14px 22px;
+  border: 1.5px solid #c3c7e7;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+  background: #fff;
+  color: #222;
+  box-shadow: 0 1px 4px rgba(90, 103, 216, 0.04);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #5a67d8;
+  background: #f6f7fb;
+  box-shadow: 0 0 0 2px #5a67d822;
+}
+
+.search-button {
+  background: #5a67d8;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 2px 8px rgba(90, 103, 216, 0.10);
+  letter-spacing: 1px;
+  }
+
+.search-button:hover {
+  background: #434190;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(90, 103, 216, 0.13);
+  }
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.song-card {
+  background: #f6f7fb;
+  border-radius: 14px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(90, 103, 216, 0.08);
+  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+  border: 1px solid #e9eaf3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.song-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(90, 103, 216, 0.13);
+  border-color: #5a67d8;
+}
+
+.song-art {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #5a67d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 1px 4px rgba(90, 103, 216, 0.10);
+  border: 2px solid #e9eaf3;
+}
+
+.song-artist {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #5a67d8;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.song-title {
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #5a67d8;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #888;
+  font-size: 1.1rem;
+  background: #f6f7fb;
+  border-radius: 12px;
+  border: 1.5px dashed #e9eaf3;
+  margin-top: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .main-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.2rem 0 0.5rem 0;
+  }
+  .brand-title {
+    font-size: 1.2rem;
+  }
+  .search-container {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    border-radius: 10px;
+  }
+  .songs-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .song-card {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    border-radius: 10px;
+  }
+  .song-art {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
