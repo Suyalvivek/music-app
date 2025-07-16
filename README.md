@@ -40,15 +40,14 @@
 
 ## 📱 Demo
 
-> **Live Demo**: [View Application](https://your-deployed-app.vercel.app)
+> **Live Demo**: [View Application](https://suyalvivek.github.io/music-app)
 
 ### Screenshots
 
-<div align="center">
-  <img src="./screenshots/home-page.png" width="300" alt="Home Page"/>
-  <img src="./screenshots/search-results.png" width="300" alt="Search Results"/>
-  <img src="./screenshots/player-interface.png" width="300" alt="Player Interface"/>
-</div>
+  <p align="center">
+  <img src="./demo.jpeg" alt="Demo Screenshot" width="700"/>
+    <img src="./search.jpeg" alt="Search Functionality" width="700"/>
+</p>
 
 ## 🛠️ Installation
 
@@ -73,6 +72,9 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
 ```
 
 ### Environment Setup
